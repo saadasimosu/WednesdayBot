@@ -3,7 +3,7 @@ import json
 import time
 
 # Bot paramaters
-bot_id = 
+bot_id =
 image_url =
 headers =
 message =
@@ -26,7 +26,7 @@ except requests.exceptions.RequestException as e:  # This is the correct syntax
 
 time.sleep(10)
 
-# POST image request to bot
+# POST message request to bot
 try:
     r = requests.post('https://api.groupme.com/v3/bots/post', data = message_data_json, headers = headers, verify=True)
 except requests.exceptions.RequestException as e:  # This is the correct syntax
